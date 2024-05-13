@@ -1,1 +1,1 @@
-https://andriins.github.io/digital-agency/
+https://andriins.github.io/digital/
