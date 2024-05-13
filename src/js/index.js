@@ -192,10 +192,17 @@ updateCardPositions();
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzYAnWXAokkh2HLzXQWs58PaGtGdG6ra-5VgPZOObc_2JZkVCR9bHF8oAAff88Eo899zQ/exec";
 const form = document.forms["submit-to-google-sheet"];
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
+    .then((response) => {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Дякуємо за заявку, ми невдовзі з Вами зв'яжемося.",
+        showConfirmButton: false,
+        timer: 3500
+      });
+    })
     .catch((error) => console.error("Error!", error.message));
 });
