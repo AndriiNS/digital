@@ -203,6 +203,7 @@ form.addEventListener("submit", (e) => {
         showConfirmButton: false,
         timer: 3500
       });
+      form.reset();
     })
     .catch((error) => console.error("Error!", error.message));
 });
