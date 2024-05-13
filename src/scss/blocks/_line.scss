@@ -1,0 +1,200 @@
+.line {
+  min-height: 164px;
+  background-color: #000;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 800px) {
+    min-height: 91px;
+  }
+}
+
+.line__content {
+  width: 200%;
+  display: flex;
+  gap: 200px;
+  animation: runText 5s linear infinite;
+  overflow: hidden;
+  position: absolute;
+  @media (max-width: 800px) {
+    padding: 30px;
+  }
+}
+
+.work__content {
+  width: 200%;
+  display: flex;
+  gap: 20px;
+  animation: runText 8s linear infinite;
+  overflow: hidden;
+  position: absolute;
+  @media (max-width: 1100px) {
+    width: 300%;
+    gap: 150px;
+  }
+  @media (max-width: 768px) {
+    width: 500%;
+    gap: 20px;
+    animation: runText 14s linear infinite;
+  }
+}
+.line__text {
+  font-size: 97.4px;
+  font-weight: 400;
+  line-height: 156px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #c9fa49;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  @media (max-width: 800px) {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.6px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}
+.line__work {
+  position: relative;
+  min-height: 132px;
+  display: flex;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.work__text {
+  font-size: 78.89px;
+  font-weight: 400;
+  line-height: 84.48px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-wrap: nowrap;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  @media (max-width: 1440px) {
+    font-size: 50px;
+  }
+  @media (max-width: 1100px) {
+    font-family: Arial;
+    font-size: 36px;
+  }
+  @media (max-width: 400px) {
+    font-size: 26px;
+  }
+}
+@keyframes runText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+//========================================================================================================================================================
+//process
+.process {
+  background-color: #000;
+  padding-top: 283px;
+  padding-left: 320px;
+  @media (max-width: 1300px) {
+    display: flex;
+    padding-left: 0;
+    padding-top: 200px;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 80px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  // .process__title
+
+  &__title {
+    font-family: Neutral Face;
+    font-size: 71.59px;
+    font-weight: 400;
+    line-height: 77.28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    @media (max-width: 1000px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+    @media (max-width: 400px) {
+      font-size: 28px;
+    }
+  }
+
+  // .process__text
+
+  &__text {
+    font-family: Arial;
+    font-size: 22.69px;
+    font-weight: 400;
+    line-height: 32.4px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-bottom: 385px;
+    color: #f0f5f3;
+    @media (max-width: 1000px) {
+      padding-bottom: 150px;
+      font-size: 14px;
+    }
+  }
+}
+//touch
+.touch {
+  background-color: #c9fa49;
+  min-height: 168px;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  // .touch__content
+
+  &__content {
+    padding: 14px 0;
+    width: 200%;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    animation: runText 6s linear infinite;
+    overflow: hidden;
+    position: absolute;
+    @media (max-width: 800px) {
+    }
+  }
+
+  // .touch__text
+
+  &__text {
+    font-family: Arial;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 115.2px;
+    letter-spacing: 1px;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    text-wrap: nowrap;
+    @media (max-width: 500px) {
+      font-size: 36px;
+    }
+  }
+}

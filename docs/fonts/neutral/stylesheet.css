@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('NeutralFaceRegular.eot');
+    src: local('Neutral Face'), local('NeutralFaceRegular'),
+        url('NeutralFaceRegular.eot?#iefix') format('embedded-opentype'),
+        url('NeutralFaceRegular.woff2') format('woff2'),
+        url('NeutralFaceRegular.woff') format('woff'),
+        url('NeutralFaceRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('NeutralFaceBold.eot');
+    src: local('Neutral Face Bold'), local('NeutralFaceBold'),
+        url('NeutralFaceBold.eot?#iefix') format('embedded-opentype'),
+        url('NeutralFaceBold.woff2') format('woff2'),
+        url('NeutralFaceBold.woff') format('woff'),
+        url('NeutralFaceBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

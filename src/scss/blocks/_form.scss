@@ -1,0 +1,140 @@
+.form {
+  // .form__content
+  margin-bottom: 190px;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    @media (max-width: 1500px) {
+      gap: 40px;
+    }
+  }
+
+  // .form__title-box
+
+  // .form__title
+
+  &__title {
+    font-family: Inter Tight;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+    max-width: 1200px;
+    &:nth-child(2) {
+      text-align: right;
+    }
+    @media (max-width: 1500px) {
+      font-size: 36px;
+      line-height: 36px;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+    @media (max-width: 400px) {
+      font-size: 28px;
+      &:nth-child(2) {
+        text-align: left;
+      }
+    }
+  }
+
+  // .form__box
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+    width: 100%;
+  }
+
+  // .form__box-input
+
+  &__box-input {
+    display: flex;
+    align-items: center;
+    background: #0707071a;
+    padding: 5px 5px 5px 25px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 1620px;
+    input {
+      width: 100%;
+      padding: 43px 50px;
+      font-family: Inter Tight;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 44px;
+      @media (max-width: 1500px) {
+        font-size: 26px;
+        line-height: 16px;
+      }
+      @media (max-width: 850px) {
+        background: #0707071a;
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 17.6px;
+        padding: 20px 28px;
+      }
+    }
+    @media (max-width: 850px) {
+      flex-direction: column;
+      gap: 40px;
+      background-color: inherit;
+      align-items: center;
+    }
+  }
+
+  // .form__btn
+
+  &__btn {
+    padding: 35px 80px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    border-radius: 20px;
+    font-family: Inter Tight;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    @media (max-width: 1500px) {
+      font-size: 18px;
+      line-height: 16px;
+    }
+    @media (max-width: 850px) {
+      padding: 24px 60px;
+      font-size: 18px;
+      line-height: 19.8px;
+    }
+  }
+}
+.form__box-input input {
+  &::placeholder {
+    font-family: Inter Tight;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    @media (max-width: 1500px) {
+      font-size: 26px;
+      line-height: 16px;
+    }
+    @media (max-width: 850px) {
+      border-radius: 30px;
+      font-size: 16px;
+      line-height: 17.6px;
+    }
+  }
+}
+.img-none {
+  @media (max-width: 850px) {
+    display: none;
+  }
+}

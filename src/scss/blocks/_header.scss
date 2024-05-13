@@ -1,0 +1,45 @@
+.header {
+  padding: 40px 50px;
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
+  font-family: Inter Tight;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.8px;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1000px) {
+    z-index: 100;
+  }
+}
+.logo {
+  // .logo__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .logo__phone
+
+  &__phone {
+    font-family: Inter Tight;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    color: #070707;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}

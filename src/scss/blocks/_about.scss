@@ -1,0 +1,248 @@
+.about {
+  // .about__content
+  padding-top: 240px;
+  background-color: #000;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .about__title-box
+
+  &__title-box {
+    padding-left: 125px;
+    max-width: 1410px;
+    margin-bottom: 137px;
+    @media (max-width: 1300px) {
+      max-width: 400px;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    @media (max-width: 520px) {
+      margin: 0;
+    }
+  }
+
+  // .about__title
+
+  &__title {
+    font-family: Neutral Face;
+    font-size: 204.08px;
+    font-weight: 400;
+    line-height: 182.51px;
+    color: #fff;
+    @media (max-width: 1300px) {
+      font-size: 70px;
+      line-height: 73px;
+      &:nth-child(2) {
+        padding-left: 80px;
+        margin-bottom: 90px;
+      }
+    }
+    @media (max-width: 520px) {
+      &:nth-child(2) {
+        padding-left: 0;
+      }
+    }
+    @media (max-width: 400px) {
+      font-size: 50px;
+    }
+  }
+
+  // .about__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    grid-column-gap: 103px;
+    padding-bottom: 240px;
+    max-width: 1600px;
+    margin: 0 auto;
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0 35px;
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 200px;
+    }
+  }
+
+  // .about__inner-left
+
+  &__inner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 1300px) {
+      img {
+        width: 600px;
+        height: 700px;
+      }
+    }
+    @media (max-width: 700px) {
+      img {
+        width: 360px;
+        height: 420px;
+      }
+    }
+    @media (max-width: 400px) {
+      img {
+        height: 300px;
+      }
+    }
+  }
+
+  // .about__inner-right
+
+  &__inner-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 1300px) {
+      img {
+        width: 600px;
+        height: 700px;
+      }
+    }
+    @media (max-width: 700px) {
+      img {
+        width: 360px;
+        height: 420px;
+      }
+    }
+    @media (max-width: 400px) {
+      img {
+        height: 300px;
+      }
+    }
+  }
+}
+
+.left {
+  // .left__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // .left__box-title
+
+  &__box-title {
+    font-family: NAMO;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  // .left__box-text
+
+  &__box-text {
+    font-family: NAMO;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: #fff;
+    max-width: 430px;
+  }
+}
+.right {
+  // .right__text
+
+  &__text {
+    color: #fff;
+    padding-bottom: 131px;
+    font-family: NAMO;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;
+    max-width: 475px;
+    align-self: flex-end;
+    @media (max-width: 1300px) {
+      text-align: center;
+      align-self: center;
+      padding-bottom: 97px;
+    }
+  }
+}
+.about-absolute {
+  // .about-absolute__text
+
+  &__text {
+    position: absolute;
+    color: #fff;
+    font-family: NAMO;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    max-width: 210px;
+    bottom: 190px;
+    left: 111px;
+
+    @media (max-width: 700px) {
+      max-width: 157px;
+    }
+    @media (max-width: 500px) {
+      left: 10%;
+    }
+  }
+}
+.about__btn {
+  font-family: Inter Tight;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  transition: all 0.3s ease 0s;
+  padding: 5px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: 131px;
+  padding: 20px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./../img/icons/insta-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+  @media (max-width: 1300px) {
+    margin-top: 250px;
+    margin-bottom: 131px;
+  }
+  @media (max-width: 700px) {
+    margin: 100px 0;
+    align-self: flex-end;
+  }
+}
+.left__box.right {
+  @media (max-width: 700px) {
+    text-align: right;
+    max-width: 360px;
+  }
+}

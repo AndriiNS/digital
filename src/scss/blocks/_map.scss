@@ -1,0 +1,213 @@
+.map {
+  background-color: #000;
+  border-top: 2px solid #5c5c5c;
+  // .map__content
+  overflow: hidden;
+
+  &__content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 250px;
+  }
+
+  // .map__content-block
+
+  &__content-block {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    @media (max-width: 1000px) {
+      gap: 12px;
+    }
+    @media (max-width: 400px) {
+      gap: 8px;
+    }
+  }
+}
+
+.block {
+  // .block__title1
+
+  &__title1 {
+    width: 540px;
+    font-family: Arial;
+    font-size: 45.56px;
+    font-weight: 400;
+    line-height: 64.8px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #c9fa49;
+    @media (max-width: 1300px) {
+      font-family: NAMO;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      letter-spacing: 1px;
+      width: 180px;
+    }
+    @media (max-width: 400px) {
+      max-width: 140px;
+      font-size: 14px;
+    }
+  }
+
+  // .block__dot1
+
+  &__dot1 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background: #c9fa49;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 110px;
+      background: linear-gradient(180deg, #02f503 0%, rgb(255, 255, 255) 100%);
+      top: -120px;
+    }
+    @media (max-width: 540px) {
+      &::before {
+        content: "";
+        height: 80px;
+        top: -90px;
+      }
+    }
+  }
+
+  // .block__text
+
+  &__text {
+    width: 540px;
+    font-family: NAMO;
+    font-size: 19.82px;
+    font-weight: 400;
+    line-height: 28.08px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #f0f5f3;
+    @media (max-width: 1000px) {
+      font-size: 16px;
+      line-height: 19.6px;
+      max-width: 280px;
+    }
+    @media (max-width: 540px) {
+      max-width: 170px;
+      font-size: 8px;
+      line-height: 9.6px;
+    }
+    @media (max-width: 400px) {
+      max-width: 130px;
+    }
+  }
+
+  // .block__title
+
+  &__title {
+    width: 540px;
+    width: 540px;
+    font-family: Arial;
+    font-size: 45.56px;
+    font-weight: 400;
+    line-height: 64.8px;
+    letter-spacing: 1px;
+    color: #c9fa49;
+    text-align: right;
+    @media (max-width: 1300px) {
+      font-family: NAMO;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      letter-spacing: 1px;
+      width: 180px;
+    }
+    @media (max-width: 540px) {
+      text-align: left;
+      padding-left: 20px;
+    }
+    @media (max-width: 400px) {
+      max-width: 140px;
+      font-size: 14px;
+      padding-left: 0;
+    }
+  }
+
+  // .block__dot
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background: #c9fa49;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 260px;
+      background-color: #b3b3b3;
+      top: -270px;
+    }
+    @media (max-width: 540px) {
+      &::before {
+        content: "";
+        height: 215px;
+        top: -225px;
+      }
+    }
+  }
+}
+.block__dot2 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  background: #c9fa49;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 260px;
+    background-color: #b3b3b3;
+    top: -270px;
+  }
+  &::after {
+    content: "";
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: #b3b3b3;
+    top: 25px;
+  }
+  @media (max-width: 540px) {
+    &::before {
+      content: "";
+      height: 220px;
+      top: -230px;
+    }
+  }
+}
